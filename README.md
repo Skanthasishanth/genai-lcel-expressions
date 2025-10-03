@@ -5,7 +5,7 @@ To design and implement a LangChain Expression Language (LCEL) expression that u
 
 ### PROBLEM STATEMENT:
 
-In this experiment we are implementing LangChain Expression Language with two prompt parameters and three key components, where we can generate the prompt output in 4-5 ways depending on the complexity of the prompt such as Simple Chain, More Complex Chain, Bind, Fallbacks, Interface and so on.In this experiment we have include SImple chain and More Complex Chain for better output results.
+In this experiment we are implementing LangChain Expression Language with two prompt parameters and three key components, where we can generate the prompt output in 4-5 ways depending on the complexity of the prompt such as Simple Chain, More Complex Chain, Bind, Fallbacks, Interface and so on. In this experiment we have include Simple chain and More Complex Chain for better output results.
 
 ### DESIGN STEPS:
 
@@ -15,15 +15,22 @@ Load necessary libraries like openai, langchain.prompts, and langchain.chat_mode
 
 #### STEP 2:
 
-Create a ChatPromptTemplate, use ChatOpenAI for the model, and StrOutputParser for parsing the output. Chain components using the | operator, provide input, and execute the chain to generate a response.
+Create a ChatPromptTemplate, use ChatOpenAI for the model, and StrOutputParser for parsing the output. 
 
 #### STEP 3:
-
-Create DocArrayInMemorySearch from a list of texts with OpenAIEmbeddings() and set up the retriever.
+Chain components using the | operator, provide input, and execute the chain to generate a response.
 
 #### STEP 4:
 
-Use ChatPromptTemplate to combine the retrieved context and user-provided question into a single prompt.Map functions to fetch relevant documents and the question, then invoke the chain to generate a response.
+Create DocArrayInMemorySearch from a list of texts with OpenAIEmbeddings() and set up the retriever.
+
+#### STEP 5:
+
+Use ChatPromptTemplate to combine the retrieved context and user-provided question into a single prompt.
+
+#### STEP 6:
+
+Map functions to fetch relevant documents and the question, then invoke the chain to generate a response.
 
 ### PROGRAM:
 
