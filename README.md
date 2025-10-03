@@ -27,6 +27,9 @@ Use ChatPromptTemplate to combine the retrieved context and user-provided questi
 
 ### PROGRAM:
 
+#### Name - Kantha Sishanth S
+#### Reg. No. - 212222100020
+
 ```py
 import os
 import openai
